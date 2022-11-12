@@ -1,0 +1,176 @@
+{
+  "name": "algox-guard",
+  "abilities": [
+    {
+      "level": 0,
+      "initiative": 15,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "shield",
+          "value": 1,
+          "small": false
+        },
+        {
+          "type": "retaliate",
+          "value": 2,
+          "small": false
+        }
+      ],
+      "name": "Parry and Thrust"
+    },
+    {
+      "level": 0,
+      "name": "Calculated Strike",
+      "initiative": 70,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "minus",
+          "small": false
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "plus",
+          "small": false
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "name": "Throwing Axe",
+      "initiative": 35,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "minus",
+          "small": false
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 2,
+              "small": false
+            }
+          ],
+          "small": false
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "name": "Venom Shiv",
+      "initiative": 15,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "poison",
+              "small": false
+            }
+          ],
+          "small": false
+        },
+        {
+          "type": "shield",
+          "value": 1,
+          "small": false
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "name": "Hasty Assault",
+      "initiative": 30,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus",
+          "small": false
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "small": false
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "name": "Nothing Special",
+      "initiative": 50,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus",
+          "small": false
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "small": false
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "name": "Nothing Special",
+      "initiative": 50,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus",
+          "small": false
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "small": false
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "name": "Psych Up",
+      "initiative": 55,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "minus",
+          "small": false
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "small": false
+        },
+        {
+          "type": "condition",
+          "value": "strengthen",
+          "small": false
+        }
+      ]
+    }
+  ],
+  "edition": "fh"
+}
